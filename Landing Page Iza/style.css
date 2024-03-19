@@ -1,60 +1,411 @@
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
 }
 
 html {
-    height: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 
 
 .heading a {
-    text-decoration: none;
-
-    color: #A57D51;
-    text-align: center;
-    font-family: "IBM Plex Sans";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700
-;
-    line-height: normal;
-    padding: 125px 0px 3px 0px;
+  text-decoration: none;
+  color: #A57D51;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 125px 0px 3px 0px;
 }
 
 .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    background-color:#FFFCF4;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  background-color: #FFFCF4;
+  width: 100%;
 
 }
 
 .logo {
-
-    width: 184px;
-    height: 150px;
-    flex-shrink: 0;
+  width: 281px;
+  height: 184px;
+  flex-shrink: 0;
 }
 
 body {
-    
-    width: 100%;
-    height: 100%;
-    flex-shrink: 0;
-    background: url(imagens/fundo.png) lightgray 50% / cover no-repeat;
-background-blend-mode: lighten;
-background-size: cover;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  background: url(imagens/fundo.png) lightgray 50% / cover no-repeat;
+  background-blend-mode: lighten;
+  background-size: cover;
 }
+
+.menuImage {
+  width: 100%;
+  height: 100%;
+}
+
+.menuImage {
+  background-image: url(imagens/menuImage.png);
+  display: flex;
+  background-size: cover;
+}
+
+.centerBox {
+  margin: auto;
+  width: 534px;
+  height: 374px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: rgba(217, 217, 217, 0.80);
+}
+
+.saibaMais {
+  margin: auto;
+  margin-top: 56px;
+  width: 480px;
+  color: #A57D51;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+}
+
+.botaoSaibaMais {
+  text-decoration: none;
+  margin-left: 169px;
+  margin-top: 64.5px;
+  display: inline-flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #FFF;
+  border-color: #FFF;
+}
+
+.botaoSaibaMais a {
+  text-decoration: none;
+  color: var(--Marrom, #A57D51);
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  ;
+}
+
+.h1Port {
+  width: 701px;
+  color: var(--Marrom, #A57D51);
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "div9 img1 img2 img3 div7"
+    "div9 img1 img2 img3 div7"
+    "div9 img6 img5 img4 div7"
+    "div9 img6 img5 img4 div8";
+  grid-template-columns: 120px 1fr 1fr 1fr 120px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.container>div {
+  border: 1px dashed #888;
+}
+
+.div9 {
+  grid-area: div9;
+  width: 100px;
+  height: 1117px;
+  flex-shrink: 0;
+  border-radius: 0px 104px 104px 0px;
+  background: var(--Cinza, #D9D9D9);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25) inset;
+
+}
+
+.img1 {
+  grid-area: img1;
+  width: 404px;
+  height: 404px;
+  flex-shrink: 0;
+  border-radius: 76px;
+  background: url(imagens/Suite\ Master.jpg) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 140px 4px 0px rgba(0, 0, 0, 0.20);
+  display: flex;
+  margin-left: 120px;
+
+}
+
+.txtQuarto {
+  width: 178px;
+  height: 34px;
+  color: #000;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-decoration: none;
+  margin-top: 450px;
+  margin-left: 120px;
+
+}
+
+.img2 {
+  grid-area: img2;
+  width: 403px;
+  height: 404px;
+  border-radius: 76px;
+  background: url(imagens/Cozinha.png) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 140px 4px 0px rgba(0, 0, 0, 0.20);
+  display: flex;
+  margin-left: 75px;
+}
+
+.txtCozinha {
+  width: 178px;
+  height: 34px;
+  color: #000;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-decoration: none;
+  margin-top: 450px;
+  margin-left: 120px;
+}
+
+.img3 {
+  grid-area: img3;
+  width: 404px;
+  height: 404px;
+  border-radius: 76px;
+  background: url(imagens/Lavabo.jpg) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 140px 4px 0px rgba(0, 0, 0, 0.20);
+  display: flex;
+  margin-left: 25px;
+}
+
+.txtBanheiro {
+  width: 178px;
+  height: 34px;
+  color: #000;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-decoration: none;
+  margin-top: 450px;
+  margin-left: 120px;
+}
+
+.div7 {
+  grid-area: div7;
+  width: 120px;
+  height: 787px;
+  flex-shrink: 0;
+  border-radius: 104px 0px 0px 104px;
+  background: var(--Bege---Brown, #DFD5CA);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25) inset;
+
+
+
+}
+
+.img6 {
+  grid-area: img6;
+  width: 404px;
+  height: 404px;
+  border-radius: 76px;
+  background: url(imagens/Living.jpg) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 140px 4px 0px rgba(0, 0, 0, 0.20);
+  display: flex;
+  margin-left: 120px;
+}
+
+.txtLiving {
+  width: 178px;
+  height: 34px;
+  color: #000;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-decoration: none;
+  margin-top: 450px;
+  margin-left: 120px;
+
+}
+
+.img5 {
+  grid-area: img5;
+  width: 404px;
+  height: 404px;
+  border-radius: 76px;
+  background: url(imagens/AreaGourmet.jpg) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 140px 4px 0px rgba(0, 0, 0, 0.20);
+  display: flex;
+  margin-left: 75px;
+}
+
+.txtGourmet {
+  width: 178px;
+  height: 34px;
+  color: #000;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-decoration: none;
+  margin-top: 450px;
+  margin-left: 120px;
+}
+
+
+.img4 {
+  grid-area: img4;
+  width: 404px;
+  height: 404px;
+  border-radius: 76px;
+  background: url(imagens/Fachada.png) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 140px 4px 0px rgba(0, 0, 0, 0.20);
+  display: flex;
+  margin-left: 25px;
+}
+
+.txtFachada {
+  width: 178px;
+  height: 34px;
+  color: #000;
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-decoration: none;
+  margin-top: 450px;
+  margin-left: 120px;
+}
+
+.div8 {
+  grid-area: div8;
+  width: 120px;
+  height: 270px;
+  flex-shrink: 0;
+  border-radius: 104px 0px 0px 104px;
+  background: var(--Verde, #BDD0B9);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25) inset;
+  margin-right: -100px;
+
+}
+
+.boxSobreNos {
+  width: 1600px;
+  height: 926px;
+  flex-shrink: 0;
+  border-radius: 0px 126px 126px 0px;
+  background: var(--Verde, #BDD0B9);
+  box-shadow: 30px 30px 30px 0px #879584;
+  display: flex;
+  justify-content: start;
+  margin-top: 300px;
+}
+
+.circle {
+  width: 713px;
+  height: 713px;
+  flex-shrink: 0;
+  border-radius: 713px;
+  background: var(--Cinza, #D9D9D9);
+  box-shadow: 30px 40px 40px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 500px;
+ display: auto;
+ margin-left: -250px;
+
+
+}
+
+.sobreNos {
+  color: var(--Marrom, #A57D51);
+  font-family: "Times New Roman";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+
+
+}
+
+.textoSobreNos {
+  width: 1151px;
+  height: 344px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "IBM Plex Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+
+}
+
+/* Configuração do posicionamento de texto do 'Sobre Nós'*/
+.txtSN {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  margin-top: 50px;
+
+}
+
+
+
